@@ -256,3 +256,9 @@ footer.site p + p { margin-top: 6px; }
   background: #fffdf8; display: inline-block; padding: 14px 24px; border-radius: 14px;
 }
 .theme-retro footer.site { text-align: center; }
+.badge {
+  align-self: flex-start;
+  background: var(--secondary-soft); color: var(--secondary);
+  font-weight: 800; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 999px;
+}
