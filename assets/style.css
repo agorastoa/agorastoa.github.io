@@ -435,3 +435,18 @@ section.trending::after { width: 260px; height: 260px; left: -60px; bottom: -110
   .t-card { flex: 0 0 62%; scroll-snap-align: start; }
   section.trending { margin: 10px 6px 24px; border-radius: 28px; }
 }
+
+/* ===== Softer pink background ===== */
+:root { --bg: #fdf1ec; --line: #f6ddd4; }
+body:not(.theme-fantasy):not(.theme-retro) {
+  background:
+    radial-gradient(900px 600px at 100% 0%, rgba(254,160,120,.16), transparent 60%),
+    radial-gradient(800px 600px at 0% 30%, rgba(242,110,135,.10), transparent 60%),
+    radial-gradient(900px 700px at 100% 75%, rgba(255,185,150,.14), transparent 60%),
+    radial-gradient(700px 600px at 0% 100%, rgba(242,110,135,.09), transparent 60%),
+    #fdf1ec;
+  background-attachment: fixed;
+}
+body:not(.theme-fantasy):not(.theme-retro) header.site { background: rgba(253,241,236,.85); }
+section.band-warm { background: linear-gradient(135deg, rgba(255,228,214,.7), rgba(255,220,226,.65)); }
+footer.site { background: #fae1d9; }
