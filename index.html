@@ -29,26 +29,42 @@
 </header>
 
 <main>
-  <div class="hero wrap">
-    <span class="pill">Your daily dose of inspiration</span>
-    <h1>A gathering place for<br><em>inspiration</em></h1>
-    <p>Like the ancient agora, a place to discover new ideas: spaces with personality, gift ideas and curated finds, every piece linked.</p>
-    <div class="hero-btns">
-      <a class="btn btn-ghost" href="#categories">Explore Agora</a>
-      <a data-goatcounter-click="storefront-index-2" data-goatcounter-title="Amazon Storefront (index)" class="btn btn-brand" href="https://a.co/d/02xRM8Po" target="_blank" rel="sponsored noopener">Shop my Amazon Storefront</a>
+  <div class="hero hero-split wrap">
+    <div class="hero-text reveal">
+      <span class="pill">Your daily dose of inspiration</span>
+      <h1>A gathering place for<br><em>inspiration</em></h1>
+      <p>Like the ancient agora, a place to discover new ideas: spaces with personality, gift ideas and curated finds, every piece linked.</p>
+      <div class="hero-btns">
+        <a class="btn btn-brand" href="#categories">Explore Agora</a>
+        <a data-goatcounter-click="storefront-index-2" data-goatcounter-title="Amazon Storefront (index)" class="btn btn-ghost" href="https://a.co/d/02xRM8Po" target="_blank" rel="sponsored noopener">My Amazon Storefront</a>
+      </div>
+    </div>
+    <div class="collage reveal" aria-hidden="true">
+      <span class="blob blob-1"></span><span class="blob blob-2"></span>
+      <a class="ph ph-1" href="setups/fantasy-setup.html" tabindex="-1"><img src="assets/img/fantasy-setup.jpg" alt=""><span>Desk setups</span></a>
+      <a class="ph ph-2" href="kitchens/retro-kitchen.html" tabindex="-1"><img src="assets/img/fridge.jpg" alt=""><span>Retro kitchen</span></a>
+      <a class="ph ph-3" href="gifts/" tabindex="-1"><img src="assets/img/gift-ideas-photo.jpg" alt=""><span>Gift ideas</span></a>
+      <span class="sticker">New<br>gift guide</span>
+      <svg class="spark s1" viewBox="-20 -20 40 40"><path d="M0 -20 C3 -5 5 -3 20 0 C5 3 3 5 0 20 C-3 5 -5 3 -20 0 C-5 -3 -3 -5 0 -20Z"/></svg>
+      <svg class="spark s2" viewBox="-20 -20 40 40"><path d="M0 -20 C3 -5 5 -3 20 0 C5 3 3 5 0 20 C-3 5 -5 3 -20 0 C-5 -3 -3 -5 0 -20Z"/></svg>
     </div>
   </div>
 
+  <div class="marquee" aria-hidden="true"><div class="track">
+    <span>Desk setups</span><i></i><span>Retro kitchens</span><i></i><span>Gift ideas</span><i></i><span>Cozy finds</span><i></i><span>Amazon favorites</span><i></i><span>Spaces with personality</span><i></i>
+    <span>Desk setups</span><i></i><span>Retro kitchens</span><i></i><span>Gift ideas</span><i></i><span>Cozy finds</span><i></i><span>Amazon favorites</span><i></i><span>Spaces with personality</span><i></i>
+  </div></div>
+
   <section id="categories">
     <div class="wrap">
-      <h2 class="section-title">Explore Agora</h2>
+      <h2 class="section-title reveal">Explore Agora</h2>
       <div class="cats cats-2">
-        <a class="cat" href="#spaces" style="background-image:url(assets/img/fantasy-setup.jpg)">
+        <a class="cat reveal" href="#spaces" style="background-image:url(assets/img/fantasy-setup.jpg)">
           <span class="tag">Spaces</span>
           <h3>Spaces with Personality</h3>
           <p>Desk setups, kitchens and more</p>
         </a>
-        <a class="cat" href="gifts/" style="background-image:url(assets/img/gift-ideas-photo.jpg)">
+        <a class="cat reveal" href="gifts/" style="background-image:url(assets/img/gift-ideas-photo.jpg)">
           <span class="tag">New</span>
           <h3>Gift Ideas</h3>
           <p>Cute gifts for every budget</p>
@@ -57,12 +73,12 @@
     </div>
   </section>
 
-  <section id="spaces">
+  <section id="spaces" class="band">
     <div class="wrap">
-      <h2 class="section-title">Spaces with Personality</h2>
-      <p class="section-intro">Unique corners to recreate at home, piece by piece.</p>
+      <h2 class="section-title reveal">Spaces with Personality</h2>
+      <p class="section-intro reveal">Unique corners to recreate at home, piece by piece.</p>
       <div class="grid">
-        <a class="card" id="desk-setups" href="setups/fantasy-setup.html">
+        <a class="card reveal" id="desk-setups" href="setups/fantasy-setup.html">
           <img src="assets/img/fantasy-setup.jpg" alt="Cozy sage green and pink gaming desk setup with plants">
           <div class="body">
             <span class="kind">Desk Setup</span>
@@ -70,7 +86,7 @@
             <p>Sage green, pink and plants.</p>
           </div>
         </a>
-        <a class="card" id="kitchens" href="kitchens/retro-kitchen.html">
+        <a class="card reveal" id="kitchens" href="kitchens/retro-kitchen.html">
           <img src="assets/img/fridge.jpg" alt="Retro diner kitchen with a cherry red fridge and checkerboard floor">
           <div class="body">
             <span class="kind">Kitchen</span>
@@ -78,7 +94,7 @@
             <p>Cherry red and chrome.</p>
           </div>
         </a>
-        <div class="card card-soon card-next">
+        <div class="card card-soon card-next reveal">
           <div class="next-art"><span>Coming soon</span></div>
           <div class="body">
             <span class="kind">Bedroom</span>
@@ -90,31 +106,45 @@
     </div>
   </section>
 
-  <section id="gifts">
+  <section class="steps-sec">
     <div class="wrap">
-      <h2 class="section-title">Gift Ideas</h2>
-      <div class="grid">
-        <a class="card" href="gifts/#boo-basket">
-          <img src="https://m.media-amazon.com/images/I/71ba9UZZWLL._AC_SL1500_.jpg" alt="Pink ghost Boo Basket Halloween gift box">
-          <div class="body">
-            <span class="kind">Halloween</span>
-            <h3>The Boo Basket</h3>
-            <p>The trending gift, from $14.</p>
-          </div>
-        </a>
-        <a class="card" href="gifts/">
-          <img src="assets/img/gift-ideas-photo.jpg" alt="Kraft paper gifts tied with pink ribbons">
-          <div class="body">
-            <span class="kind">All gifts</span>
-            <h3>No idea what to give?</h3>
-            <p>Christmas, birthdays and more.</p>
-          </div>
-        </a>
+      <h2 class="section-title reveal" style="text-align:center">How Agora works</h2>
+      <div class="steps">
+        <div class="step reveal"><b>1</b><h3>Get inspired</h3><p>Browse dreamy spaces and gift guides.</p></div>
+        <div class="step reveal"><b>2</b><h3>Pick your favorites</h3><p>Every piece is shown and linked.</p></div>
+        <div class="step reveal"><b>3</b><h3>Shop on Amazon</h3><p>Fast shipping, from your couch.</p></div>
       </div>
     </div>
   </section>
 
-  <section id="storefront">
+  <section id="gifts" class="band band-warm">
+    <div class="wrap gifts-split">
+      <div class="gifts-intro reveal">
+        <span class="pill">Gift ideas</span>
+        <h2 class="section-title">No idea what to give?</h2>
+        <p>Christmas, birthdays, Halloween: the best gift finds on Amazon, hand-picked so you never overthink it again.</p>
+        <a class="btn btn-brand" href="gifts/">See all gift ideas</a>
+      </div>
+      <a class="card reveal" href="gifts/#boo-basket">
+        <img src="https://m.media-amazon.com/images/I/71ba9UZZWLL._AC_SL1500_.jpg" alt="Pink ghost Boo Basket Halloween gift box">
+        <div class="body">
+          <span class="kind">Halloween · Trending</span>
+          <h3>The Boo Basket</h3>
+          <p>The trending gift, from $14.</p>
+        </div>
+      </a>
+      <a class="card reveal" href="gifts/">
+        <img src="assets/img/gift-ideas-photo.jpg" alt="Kraft paper gifts tied with pink ribbons">
+        <div class="body">
+          <span class="kind">All gifts</span>
+          <h3>Gifts for every budget</h3>
+          <p>Christmas, birthdays and more.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="storefront" class="reveal">
     <div class="wrap">
       <div class="storefront">
         <img src="assets/img/logo.png" alt="">
@@ -135,6 +165,11 @@
   </div>
 </footer>
 
+<script>
+(function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+els.forEach(function(e){io.observe(e)});})();
+</script>
 <script data-goatcounter="https://agorastoa.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
