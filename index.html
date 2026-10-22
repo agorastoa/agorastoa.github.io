@@ -55,6 +55,8 @@
     <span>Desk setups</span><i></i><span>Retro kitchens</span><i></i><span>Gift ideas</span><i></i><span>Cozy finds</span><i></i><span>Amazon favorites</span><i></i><span>Spaces with personality</span><i></i>
   </div></div>
 
+  <section id="trending" class="trending"></section>
+
   <section id="categories">
     <div class="wrap">
       <h2 class="section-title reveal">Explore Agora</h2>
@@ -170,6 +172,7 @@
 var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
 els.forEach(function(e){io.observe(e)});})();
 </script>
+<script src="assets/trending.js"></script>
 <script data-goatcounter="https://agorastoa.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
