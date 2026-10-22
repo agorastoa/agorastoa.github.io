@@ -269,3 +269,11 @@ footer.site p + p { margin-top: 6px; }
   aspect-ratio: 3/4; display: grid; place-items: center; font-size: 4.5rem;
   background: var(--brand-gradient);
 }
+
+/* Spaces section */
+.cats-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.cats-2 .cat { min-height: 320px; }
+.section-intro { color: var(--muted); margin: -8px 0 22px; }
+.card .kind { display:inline-block; font-size:.72rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color: var(--primary); margin-bottom:4px; }
+.card-next .next-art { aspect-ratio: 3/4; display:grid; place-items:center; background: linear-gradient(160deg, var(--primary-soft), var(--secondary-soft)); }
+.card-next .next-art span { background:#fff; color: var(--primary); font-weight:800; font-size:.85rem; letter-spacing:.08em; text-transform:uppercase; padding:8px 16px; border-radius:999px; }
