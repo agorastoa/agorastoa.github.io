@@ -390,3 +390,48 @@ section.band-warm { background: linear-gradient(135deg, rgba(255,214,196,.75), r
 footer.site { background: #f6cfc5; }
 .btn-ghost { background: rgba(255,255,255,.6); }
 .pill { background: rgba(255,255,255,.7); }
+
+/* ===== Trending Now (seasonal) ===== */
+section.trending { margin: 10px 14px 30px; border-radius: 40px; padding: 46px 0 50px; color: #fff; position: relative; overflow: hidden; }
+section.trending::before, section.trending::after { content: ""; position: absolute; border-radius: 50%; filter: blur(2px); opacity: .35; pointer-events: none; }
+section.trending::before { width: 380px; height: 380px; right: -80px; top: -120px; animation: blob 12s ease-in-out infinite; }
+section.trending::after { width: 260px; height: 260px; left: -60px; bottom: -110px; animation: blob 10s ease-in-out infinite reverse; }
+.season-halloween { background: linear-gradient(135deg, #3a1f3d 0%, #5b2a4a 45%, #c2492e 100%); }
+.season-halloween::before { background: radial-gradient(circle, #ff8a3d, transparent 70%); }
+.season-halloween::after { background: radial-gradient(circle, #ff5fa2, transparent 70%); }
+.season-christmas { background: linear-gradient(135deg, #123c2f 0%, #1f5a43 50%, #a3263a 100%); }
+.season-christmas::before { background: radial-gradient(circle, #ffd36b, transparent 70%); }
+.season-christmas::after { background: radial-gradient(circle, #ff6b81, transparent 70%); }
+.trending .wrap { position: relative; z-index: 1; }
+.t-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; margin-bottom: 26px; }
+.t-kicker { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.25); padding: 6px 14px; border-radius: 999px; font-weight: 800; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+.t-kicker i { width: 8px; height: 8px; border-radius: 50%; background: #ffd36b; box-shadow: 0 0 0 0 rgba(255,211,107,.7); animation: pulse 1.8s infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(255,211,107,.7); } 70% { box-shadow: 0 0 0 10px rgba(255,211,107,0); } 100% { box-shadow: 0 0 0 0 rgba(255,211,107,0); } }
+.t-head h2 { font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: clamp(1.9rem, 4vw, 2.6rem); line-height: 1.1; margin: 12px 0 8px; }
+.t-head p { opacity: .85; max-width: 520px; }
+.t-count { background: #fff; color: #3a1f3d; font-family: "Fraunces", Georgia, serif; font-size: 1.15rem; padding: 12px 20px; border-radius: 18px; transform: rotate(2deg); box-shadow: 0 10px 24px rgba(0,0,0,.2); }
+.season-christmas .t-count { color: #123c2f; }
+.t-row-cards { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.t-card { background: #fff; color: var(--ink); text-decoration: none; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 30px rgba(0,0,0,.18); transition: transform .3s ease; animation: tIn .6s ease both; }
+.t-card:hover { transform: translateY(-6px) rotate(-1deg); }
+@keyframes tIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.t-img { position: relative; background: #fff; }
+.t-img img { width: 100%; aspect-ratio: 1; object-fit: contain; display: block; padding: 10px; transition: transform .5s ease; }
+.t-card:hover .t-img img { transform: scale(1.06); }
+.t-note { position: absolute; left: 10px; top: 10px; background: var(--brand-gradient); color: #fff; font-size: .68rem; font-weight: 800; padding: 4px 9px; border-radius: 999px; }
+.season-halloween .t-note { background: linear-gradient(90deg, #c2492e, #ff8a3d); }
+.season-christmas .t-note { background: linear-gradient(90deg, #a3263a, #e0485e); }
+.t-body { padding: 12px 14px 14px; }
+.t-body h3 { font-size: .95rem; font-weight: 800; line-height: 1.25; min-height: 2.4em; }
+.t-row { display: flex; justify-content: space-between; align-items: center; margin-top: 6px; }
+.t-row b { font-family: "Fraunces", Georgia, serif; font-size: 1.15rem; }
+.t-row span { font-weight: 800; font-size: .82rem; color: var(--primary); }
+.t-cta { text-align: center; margin-top: 26px; }
+.t-btn { background: #fff; color: #3a1f3d; }
+.season-christmas .t-btn { color: #123c2f; }
+.t-btn:hover { background: #ffd36b; color: #2b2b2b; }
+@media (max-width: 960px) {
+  .t-row-cards { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; -webkit-overflow-scrolling: touch; }
+  .t-card { flex: 0 0 62%; scroll-snap-align: start; }
+  section.trending { margin: 10px 6px 24px; border-radius: 28px; }
+}
