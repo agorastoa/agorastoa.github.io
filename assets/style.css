@@ -371,3 +371,22 @@ section.band-warm { background: linear-gradient(135deg, #fff1e8, #ffe3e6); }
   .reveal { opacity: 1; transform: none; }
 }
 main { overflow-x: clip; }
+
+/* ===== Warmer colored background (no white) ===== */
+:root { --bg: #fbe4dc; --line: #f3cfc4; }
+body:not(.theme-fantasy):not(.theme-retro) {
+  background:
+    radial-gradient(900px 600px at 100% 0%, rgba(254,140,90,.35), transparent 60%),
+    radial-gradient(800px 600px at 0% 30%, rgba(242,80,110,.22), transparent 60%),
+    radial-gradient(900px 700px at 100% 75%, rgba(255,170,130,.30), transparent 60%),
+    radial-gradient(700px 600px at 0% 100%, rgba(242,80,110,.20), transparent 60%),
+    #fbe4dc;
+  background-attachment: fixed;
+}
+body:not(.theme-fantasy):not(.theme-retro) header.site { background: rgba(251,228,220,.82); }
+section.band { background: rgba(255,255,255,.45); backdrop-filter: blur(6px); box-shadow: 0 10px 40px rgba(224,48,78,.08); }
+section.band-warm { background: linear-gradient(135deg, rgba(255,214,196,.75), rgba(255,196,208,.7)); }
+.storefront { background: rgba(255,255,255,.55); border-color: rgba(255,255,255,.7); }
+footer.site { background: #f6cfc5; }
+.btn-ghost { background: rgba(255,255,255,.6); }
+.pill { background: rgba(255,255,255,.7); }
