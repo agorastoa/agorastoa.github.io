@@ -265,7 +265,7 @@ footer.site p + p { margin-top: 6px; }
 .cat.soft { background: var(--secondary-soft); color: var(--ink); }
 .cat.soft::before { background: none; }
 .card-soon { pointer-events: none; }
-.card-soon .soon-art {
+.card-soon .soon-art, .card-plain .soon-art {
   aspect-ratio: 3/4; display: grid; place-items: center; font-size: 4.5rem;
   background: var(--brand-gradient);
 }
