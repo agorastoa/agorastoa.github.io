@@ -19,11 +19,13 @@
     .occasions a, .occasions span { background:var(--surface); box-shadow:inset 0 0 0 2px var(--line); color:var(--ink); font-weight:800; font-size:.9rem; padding:8px 16px; border-radius:999px; text-decoration:none; }
     .occasions a { background:var(--brand-gradient); color:#fff; box-shadow:none; }
     .inside { list-style:none; padding:0; margin:14px 0 20px; display:grid; grid-template-columns:1fr 1fr; gap:8px 14px; }
-    .inside li { font-weight:700; font-size:.95rem; }
+    .inside li { font-weight:700; font-size:.95rem; padding-left:18px; position:relative; }
+    .inside li::before { content:""; position:absolute; left:0; top:.55em; width:8px; height:8px; border-radius:50%; background:var(--brand-gradient); }
     .price { font-family:"Fraunces", Georgia, serif; font-size:1.8rem; margin:4px 0 10px; }
     .price small { font-family:inherit; font-size:.9rem; color:var(--muted); }
     .trend { display:inline-block; background:#2b2b2b; color:#fff; font-weight:800; font-size:.8rem; letter-spacing:.06em; padding:5px 12px; border-radius:999px; margin-left:8px; vertical-align:middle; }
-    .card-soon .soon-art { aspect-ratio: 16/10; }
+    .card-soon img { aspect-ratio: 3/4; }
+    .card-soon .body p { font-weight:700; color:var(--primary); }
     @media (max-width: 760px) { .inside { grid-template-columns:1fr; } }
   </style>
 </head>
@@ -43,14 +45,14 @@
 
 <main>
   <div class="hero wrap">
-    <span class="pill">Gift ideas 🎁</span>
+    <span class="pill">Gift ideas</span>
     <h1>No idea what to give?<br><em>We've got you.</em></h1>
     <p>Christmas is around the corner, there's a birthday next week and your mind goes blank. Sound familiar? Here are the best gift finds on Amazon, hand-picked so you can get the perfect present from your couch: no crowded stores, no overthinking.</p>
     <div class="occasions">
-      <a href="#boo-basket">👻 Halloween</a>
-      <span>🎄 Christmas · soon</span>
-      <span>🎂 Birthdays · soon</span>
-      <span>💸 Under $30 · soon</span>
+      <a href="#boo-basket">Halloween</a>
+      <span>Christmas · soon</span>
+      <span>Birthdays · soon</span>
+      <span>Under $30 · soon</span>
     </div>
   </div>
 
@@ -61,17 +63,17 @@
         <img src="https://m.media-amazon.com/images/I/71ba9UZZWLL._AC_SL1500_.jpg" alt="Pink ghost Boo Basket gift box with ghost glass cup, candle, socks, crochet ghost and keychain">
         <div>
           <span class="pill">The gift everyone's talking about</span>
-          <h1>The Boo Basket 👻</h1>
+          <h1>The Boo Basket</h1>
           <p>Boo baskets are the sweetest Halloween trend: a surprise box of spooky-cute goodies for your bestie, sister, coworker or partner. This one comes ready to gift, so you don't have to hunt for each piece.</p>
           <div class="price">$13.99 <small>· 7 items in one box</small></div>
           <ul class="inside">
-            <li>👻 Ghost glass cup with lid &amp; straw</li>
-            <li>🧶 Crochet ghost with a sweet note</li>
-            <li>🕯️ "Spooky Season" soy candle</li>
-            <li>🧦 Cozy "Boo Boo" socks</li>
-            <li>🔑 "You're my boo" keychain</li>
-            <li>💌 Cute greeting card</li>
-            <li>🎀 Pink gift box, ready to give</li>
+            <li>Ghost glass cup with lid &amp; straw</li>
+            <li>Crochet ghost with a sweet note</li>
+            <li>"Spooky Season" soy candle</li>
+            <li>Cozy "Boo Boo" socks</li>
+            <li>"You're my boo" keychain</li>
+            <li>Cute greeting card</li>
+            <li>Pink gift box, ready to give</li>
           </ul>
           <a class="btn btn-brand" data-goatcounter-click="amazon-boo-basket" data-goatcounter-title="Boo Basket (gifts)" href="https://link.amazon/B0huhJtPb" rel="sponsored nofollow noopener" target="_blank">Shop on Amazon</a>
           <div class="tags"><span>Under $15</span><span>For her</span><span>Ready to gift</span><span>Halloween</span></div>
@@ -84,9 +86,9 @@
     <div class="wrap">
       <h2 class="section-title">More gift guides</h2>
       <div class="grid">
-        <div class="card card-soon"><div class="soon-art">🎄</div><div class="body"><h3>Christmas Gifts She'll Love</h3><p>Coming soon, just in time for the holidays.</p></div></div>
-        <div class="card card-soon"><div class="soon-art">🎂</div><div class="body"><h3>Birthday Gift Ideas</h3><p>Coming soon.</p></div></div>
-        <div class="card card-soon"><div class="soon-art">🎮</div><div class="body"><h3>Cozy Gamer Girl Gifts Under $30</h3><p>Coming soon.</p></div></div>
+        <div class="card card-soon"><img src="../assets/img/gifts-christmas.jpg" alt="Christmas tree with wrapped gifts"><div class="body"><h3>Christmas Gifts She'll Love</h3><p>Coming soon, just in time for the holidays.</p></div></div>
+        <div class="card card-soon"><img src="../assets/img/gifts-birthday.jpg" alt="Birthday cake with balloons and gifts"><div class="body"><h3>Birthday Gift Ideas</h3><p>Coming soon.</p></div></div>
+        <div class="card card-soon"><img src="../assets/img/gifts-gamer.jpg" alt="Pastel game controller with headphones and gifts"><div class="body"><h3>Cozy Gamer Girl Gifts Under $30</h3><p>Coming soon.</p></div></div>
       </div>
     </div>
   </section>
