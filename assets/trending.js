@@ -27,7 +27,7 @@
       kicker: 'Trending now · Cozy Christmas',
       title: 'Cozy Christmas Gifts',
       text: 'Soft, warm and under $30: the cozy gifts everyone wants under the tree this year.',
-      cta: { label: 'See all gift ideas', href: 'gifts/' },
+      cta: { label: 'See the Christmas gift guide', href: 'gifts/christmas.html' },
       products: [
         { name: 'Candle Warmer Lamp', price: '$19.99', note: '70K+ bought last month', img: IMG('71t96oyL+UL'), href: AMZ('B0DZFGTCLR') },
         { name: 'Sherpa Wearable Blanket', price: '$29.99', note: 'Cozy gift for her', img: IMG('71l0Ob66+UL'), href: AMZ('B0FGTRB7ZG') },
