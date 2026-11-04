@@ -15,11 +15,25 @@
       text: 'Boo baskets, cozy fall gifts and spooky-cute finds everyone is buying right now.',
       cta: { label: 'See all Halloween gifts', href: 'gifts/#boo-basket' },
       products: [
-        { name: 'The Boo Basket', price: '$13.99', note: 'Best seller', img: IMG('71ba9UZZWLL'), href: 'https://link.amazon/B0huhJtPb' },
-        { name: 'Pumpkin Boo Basket', price: '$15.29', note: '600+ bought last month', img: IMG('81NQstXCH9L'), href: AMZ('B0H2MXPFSY') },
-        { name: 'Hey Boo Pink Box', price: '$16.99', note: 'All pink & girly', img: IMG('81YswUDiIiL'), href: AMZ('B0HB3B56R5') },
-        { name: 'Deluxe Pink Ghost Basket', price: '$37.99', note: '450+ reviews', img: IMG('81eH56FfO-L'), href: AMZ('B0H691G72W') },
-        { name: 'Cozy Fall Gift Basket', price: '$39.99', note: 'Perfect all fall', img: IMG('716waPZWPnL'), href: AMZ('B0DF75LJWC') }
+        { name: 'The Boo Basket', price: 'Under $15', note: 'Best seller', img: IMG('71ba9UZZWLL'), href: 'https://link.amazon/B0huhJtPb' },
+        { name: 'Pumpkin Boo Basket', price: 'Under $20', note: '600+ bought last month', img: IMG('81NQstXCH9L'), href: AMZ('B0H2MXPFSY') },
+        { name: 'Hey Boo Pink Box', price: 'Under $20', note: 'All pink & girly', img: IMG('81YswUDiIiL'), href: AMZ('B0HB3B56R5') },
+        { name: 'Deluxe Pink Ghost Basket', price: 'Under $40', note: '450+ reviews', img: IMG('81eH56FfO-L'), href: AMZ('B0H691G72W') },
+        { name: 'Cozy Fall Gift Basket', price: 'Under $40', note: 'Perfect all fall', img: IMG('716waPZWPnL'), href: AMZ('B0DF75LJWC') }
+      ]
+    },
+    {
+      key: 'blackfriday', from: '11-16', to: '11-30', event: '11-27', eventName: 'Black Friday',
+      kicker: 'Trending now · Black Friday week',
+      title: 'Black Friday Gift Finds',
+      text: 'The cozy gifts and gift baskets to grab while prices drop. Tick off Christmas early.',
+      cta: { label: 'See all Black Friday finds', href: 'deals/black-friday.html' },
+      products: [
+        { name: 'Pink Spa Gift Basket', price: 'Gift basket', note: '3K+ bought last month', img: IMG('71evkCK1M-L'), href: AMZ('B0DCN225F9') },
+        { name: 'Candle Warmer Lamp', price: 'Under $20', note: '70K+ bought last month', img: IMG('71t96oyL+UL'), href: AMZ('B0DZFGTCLR') },
+        { name: 'Sherpa Wearable Blanket', price: 'Under $30', note: 'Cozy gift for her', img: IMG('71l0Ob66+UL'), href: AMZ('B0FGTRB7ZG') },
+        { name: 'Coffee Lover Gift Box', price: 'Under $50', note: '5-star rated', img: IMG('71PBXxXrGTL'), href: AMZ('B0G11VPVZR') },
+        { name: 'Fluffy Faux Fur Throw', price: 'Under $15', note: '20K+ bought last month', img: IMG('71lQ6usyNEL'), href: AMZ('B0BPLB81LX') }
       ]
     },
     {
@@ -29,11 +43,11 @@
       text: 'Soft, warm and under $30: the cozy gifts everyone wants under the tree this year.',
       cta: { label: 'See the Christmas gift guide', href: 'gifts/christmas.html' },
       products: [
-        { name: 'Candle Warmer Lamp', price: '$19.99', note: '70K+ bought last month', img: IMG('71t96oyL+UL'), href: AMZ('B0DZFGTCLR') },
-        { name: 'Sherpa Wearable Blanket', price: '$29.99', note: 'Cozy gift for her', img: IMG('71l0Ob66+UL'), href: AMZ('B0FGTRB7ZG') },
-        { name: 'Fluffy Faux Fur Throw', price: '$13.48', note: '20K+ bought last month', img: IMG('71lQ6usyNEL'), href: AMZ('B0BPLB81LX') },
-        { name: 'Fuzzy Cozy Socks', price: '$8.99', note: 'Perfect stocking stuffer', img: IMG('71BCwXja2WL'), href: AMZ('B08GHNRG5Q') },
-        { name: 'Cloud Socks', price: '$9.99', note: 'Ultra soft', img: IMG('714eFThUDkL'), href: AMZ('B09319MZJN') }
+        { name: 'Candle Warmer Lamp', price: 'Under $20', note: '70K+ bought last month', img: IMG('71t96oyL+UL'), href: AMZ('B0DZFGTCLR') },
+        { name: 'Sherpa Wearable Blanket', price: 'Under $30', note: 'Cozy gift for her', img: IMG('71l0Ob66+UL'), href: AMZ('B0FGTRB7ZG') },
+        { name: 'Fluffy Faux Fur Throw', price: 'Under $15', note: '20K+ bought last month', img: IMG('71lQ6usyNEL'), href: AMZ('B0BPLB81LX') },
+        { name: 'Fuzzy Cozy Socks', price: 'Under $10', note: 'Perfect stocking stuffer', img: IMG('71BCwXja2WL'), href: AMZ('B08GHNRG5Q') },
+        { name: 'Cloud Socks', price: 'Under $10', note: 'Ultra soft', img: IMG('714eFThUDkL'), href: AMZ('B09319MZJN') }
       ]
     }
   ];
