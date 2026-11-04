@@ -23,7 +23,35 @@
       ]
     },
     {
-      key: 'christmas', from: '11-01', to: '12-31', event: '12-25', eventName: 'Christmas',
+      key: 'blackfriday', from: '11-01', to: '11-27', event: '11-27', eventName: 'Black Friday',
+      kicker: 'Trending now · Black Friday',
+      title: 'Black Friday Gift Deals',
+      text: 'The Amazon finds selling fastest right now: gifts for her, cozy room glow and viral beauty. Grab them before the deals sell out.',
+      cta: { label: 'Shop all Black Friday deals', href: 'deals/black-friday.html' },
+      products: [
+        { name: 'LANEIGE Lip Sleeping Mask', price: 'Hot deal', note: '50K+ bought last month', img: IMG('51VfrPOslWL'), href: AMZ('B07XXPHQZK') },
+        { name: 'Stanley Quencher 40 oz', price: 'Hot deal', note: '10K+ bought last month', img: IMG('41vs1l35W7L'), href: AMZ('B0CRMP3RQT') },
+        { name: 'Sunset Lamp Projector', price: 'Hot deal', note: 'Viral room glow', img: IMG('71y7+yUqdSL'), href: AMZ('B0CG4NKPMY') },
+        { name: 'Pink Spa Gift Basket', price: 'Hot deal', note: 'Best seller', img: IMG('71evkCK1M-L'), href: AMZ('B0DCN225F9') },
+        { name: 'Candle Warmer Lamp', price: 'Hot deal', note: '70K+ bought', img: IMG('71t96oyL+UL'), href: AMZ('B0DZFGTCLR') }
+      ]
+    },
+    {
+      key: 'cybermonday', from: '11-28', to: '12-01', event: '11-30', eventName: 'Cyber Monday',
+      kicker: 'Trending now · Black Friday weekend',
+      title: 'Black Friday to Cyber Monday',
+      text: 'Last chance for the best Amazon gift deals of the year: viral beauty, cozy glow and big kitchen upgrades.',
+      cta: { label: 'Shop all Black Friday deals', href: 'deals/black-friday.html' },
+      products: [
+        { name: 'Ninja Air Fryer XL', price: 'Hot deal', note: '10K+ bought last month', img: IMG('61TH-Ig6i-L'), href: AMZ('B0CS3V8M9H') },
+        { name: 'Revlon One-Step Volumizer', price: 'Hot deal', note: '20K+ bought last month', img: IMG('61SrWfdHa1L'), href: AMZ('B01LSUQSB0') },
+        { name: 'Aurora Galaxy Projector', price: 'Hot deal', note: '10K+ bought last month', img: IMG('81q7oy6dBFL'), href: AMZ('B0B4518KC2') },
+        { name: 'Mulberry Silk Pillowcase', price: 'Hot deal', note: 'Luxe self-care', img: IMG('614vZw1DOtL'), href: AMZ('B0CKPKG71N') },
+        { name: 'LANEIGE Lip Sleeping Mask', price: 'Hot deal', note: '50K+ bought last month', img: IMG('51VfrPOslWL'), href: AMZ('B07XXPHQZK') }
+      ]
+    },
+    {
+      key: 'christmas', from: '12-02', to: '12-31', event: '12-25', eventName: 'Christmas',
       kicker: 'Trending now · Cozy Christmas',
       title: 'Cozy Christmas Gifts',
       text: 'Soft, warm and under $30: the cozy gifts everyone wants under the tree this year.',
